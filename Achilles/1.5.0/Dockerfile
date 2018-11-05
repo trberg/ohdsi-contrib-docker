@@ -48,7 +48,7 @@ ENV PATH /opt/app:$PATH
 VOLUME /opt/app/output
 
 # Add project files to container
-RUN curl -fsSL -o /tmp/achilles.tar.gz https://github.com/OHDSI/Achilles/archive/v${ACHILLES_VERSION}.tar.gz
+RUN curl -fsSL -o /tmp/achilles.tar.gz https://github.com/trberg/Achilles/archive/v${ACHILLES_VERSION}.tar.gz
 RUN tar -xzf /tmp/achilles.tar.gz -C /opt/app --strip-components=1
 
 # Install Achilles from source
